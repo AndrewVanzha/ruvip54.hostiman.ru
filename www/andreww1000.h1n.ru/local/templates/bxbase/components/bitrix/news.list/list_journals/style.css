@@ -1,0 +1,17 @@
+.news-list {
+	word-wrap: break-word;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.news-list .preview_picture {
+	border: 0;
+}
+.news-item > a {
+	display: block;
+	padding-bottom: 10px;
+}
+.modern-page-navigation {
+	width: 100%;
+	text-align: center;
+}

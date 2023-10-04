@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Вид";
+$arDirProperties = Array(
+
+);
+?>

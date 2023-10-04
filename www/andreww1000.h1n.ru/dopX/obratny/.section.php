@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Обратная";
+$arDirProperties = Array(
+
+);
+?>

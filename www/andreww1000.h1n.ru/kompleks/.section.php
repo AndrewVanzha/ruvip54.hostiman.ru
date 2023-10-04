@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Комплекс";
+$arDirProperties = Array(
+
+);
+?>

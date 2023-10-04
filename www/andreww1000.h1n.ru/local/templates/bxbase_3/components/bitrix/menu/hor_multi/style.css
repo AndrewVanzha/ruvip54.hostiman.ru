@@ -1,0 +1,183 @@
+/**Top menu**/
+#hor-multilevel-menu,#hor-multilevel-menu ul
+{
+	margin:0; padding:0;
+	background:#f57f17 url(images/header_menu_bg.gif) repeat-x;
+	min-height:27px;
+	width:100%;
+	list-style:none;
+	font-size: 18px;
+	float:left;
+	/*font-size:90%*/
+}
+
+#hor-multilevel-menu
+{
+
+}
+
+/*Links*/
+#hor-multilevel-menu a
+{
+	display:block;
+	padding:5px 10px;
+	/*padding:0.3em 0.8em;*/
+	text-decoration:none;
+	text-align:center;
+}
+
+#hor-multilevel-menu li
+{
+	float:left;
+}
+
+/*Root items*/
+#hor-multilevel-menu li a.root-item
+{
+	color:#fff;
+	font-weight:bold;
+	padding: 17px 12px;
+}
+
+/*Root menu selected*/
+#hor-multilevel-menu li a.root-item-selected
+{
+	background:#559EE8;
+	color:#fff;
+	font-weight:bold;
+	padding: 17px 12px;
+}
+
+/*Root items: hover*/
+#hor-multilevel-menu li:hover a.root-item, #hor-multilevel-menu li.jshover a.root-item
+{
+	background:#55d0e0;
+	color:#fff;
+}
+
+/*Item-parents*/
+#hor-multilevel-menu a.parent
+{
+	background: url(images/arrow.gif) center right no-repeat;
+}
+
+/*Denied items*/
+#hor-multilevel-menu a.denied
+{
+	background: url(images/lock.gif) center right no-repeat;
+}
+
+/*Child-items: hover*/
+#hor-multilevel-menu li:hover, #hor-multilevel-menu li.jshover
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Child-items selected*/
+#hor-multilevel-menu li.item-selected
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Sub-menu box*/
+#hor-multilevel-menu li ul
+{
+	position:absolute;
+	/*top:-999em;*/
+	top:auto;
+	display:none;
+	z-index:500;
+
+	height:auto;
+	/*width:12em;*/
+	width:135px;
+	background:#F5F5F5;
+	border:1px solid #C1C1C1;
+}
+
+/*Sub-menu item box*/
+#hor-multilevel-menu li li
+{
+	width:100%;
+	border-bottom:1px solid #DEDEDE;
+}
+
+/*Item link*/
+#hor-multilevel-menu li ul a
+{
+	text-align:left;
+}
+
+/*Items text color & size */
+#hor-multilevel-menu li a,
+#hor-multilevel-menu li:hover li a,
+#hor-multilevel-menu li.jshover li a,
+#hor-multilevel-menu li:hover li:hover li a,
+#hor-multilevel-menu li.jshover li.jshover li a,
+#hor-multilevel-menu li:hover li:hover li:hover li a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover li a,
+#hor-multilevel-menu li:hover li:hover li:hover li:hover li a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover li.jshover li a,
+#hor-multilevel-menu li:hover li:hover li:hover li:hover li:hover li a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li a
+{
+	color:#4F4F4F;
+	font-weight:bold;
+}
+
+/*Items text color & size: hover*/
+#hor-multilevel-menu li:hover li:hover a,
+#hor-multilevel-menu li.jshover li.jshover a,
+#hor-multilevel-menu li:hover li:hover li:hover a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover a,
+#hor-multilevel-menu li:hover li:hover li:hover li:hover a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover li.jshover a
+#hor-multilevel-menu li:hover li:hover li:hover li:hover li:hover a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover a
+#hor-multilevel-menu li:hover li:hover li:hover li:hover li:hover li:hover a,
+#hor-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a
+{
+	color:#4F4F4F;
+}
+
+#hor-multilevel-menu li ul ul
+{
+	margin:-27px 0 0 132px;
+	/*margin:-1.93em 0 0 11.6em;*/
+}
+
+#hor-multilevel-menu li:hover ul ul,
+#hor-multilevel-menu li.jshover ul ul,
+#hor-multilevel-menu li:hover ul ul ul,
+#hor-multilevel-menu li.jshover ul ul ul,
+#hor-multilevel-menu li:hover ul ul ul ul,
+#hor-multilevel-menu li.jshover ul ul ul ul,
+#hor-multilevel-menu li:hover ul ul ul ul ul,
+#hor-multilevel-menu li.jshover ul ul ul ul ul
+{
+	/*top:-999em;*/
+	display:none;
+}
+
+#hor-multilevel-menu li:hover ul,
+#hor-multilevel-menu li.jshover ul,
+#hor-multilevel-menu li li:hover ul,
+#hor-multilevel-menu li li.jshover ul,
+#hor-multilevel-menu li li li:hover ul,
+#hor-multilevel-menu li li li.jshover ul,
+#hor-multilevel-menu li li li li:hover ul,
+#hor-multilevel-menu li li li li.jshover ul,
+#hor-multilevel-menu li li li li li:hover ul,
+#hor-multilevel-menu li li li li li.jshover ul
+{
+	/*z-index:1000;
+	top:auto;*/
+	display:block;
+}
+
+div.menu-clear-left
+{
+	clear:left;
+}

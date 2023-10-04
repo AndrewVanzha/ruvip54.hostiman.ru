@@ -1,0 +1,4 @@
+<?
+$MESS["WEBDO_VERIFICATION_STEP_BEFORE"] 	   = "Модуль";
+$MESS["WEBDO_VERIFICATION_STEP_AFTER"]  	   = "установлен";
+$MESS["WEBDO_VERIFICATION_STEP_SUBMIT_BACK"]  = "Вернуться в список";

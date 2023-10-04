@@ -1,0 +1,28 @@
+.news-list {
+	word-wrap: break-word;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.news-list .news-item{
+	width: 30%;
+	text-align: center;
+}
+.news-list .preview_picture {
+	border: 0;
+}
+.news-item > a {
+	display: block;
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+.news-item p {
+	font-size: 24px;
+}
+.news-item small {
+	font-size: 20px;
+}
+.modern-page-navigation {
+	width: 100%;
+	text-align: center;
+}

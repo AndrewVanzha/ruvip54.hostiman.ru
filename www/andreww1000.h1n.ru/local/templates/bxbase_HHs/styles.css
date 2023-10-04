@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/libs/Roboto/Roboto-Regular.woff) format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto/Roboto-Medium.woff) format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto/Roboto-Bold.woff) format("woff");
+    font-weight: 700;
+}
+
+
+/* header */
+.header-container {
+    margin: 0 auto;
+    max-width: 3350px;
+    background: #2d3136;
+    color: #ffffff;
+}
+.header-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-info {
+    padding: 40px 100px 30px 100px;
+    /*padding: 120px 50px 200px 50px;*/
+}
+@media screen and (min-width: 1980px) {
+    .header-info {
+		padding-left: 490px;
+		padding-right: 490px;
+	}
+}
+
+/* test form */
+.test-form-block {
+    margin: 0 auto;
+    max-width: 3350px;
+    /*height: 2430px;*/
+    /*background: linear-gradient(to right bottom, #2d3136, #2d3136);*/
+    background-color: lightgrey;
+    color: #d707d7;
+}
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px 100px 100px;
+    /*padding: 0 50px 100px 50px;*/
+}
+@media screen and (min-width: 1980px) {
+    .form-wrapper {
+		padding-left: 490px;
+		padding-right: 490px;
+	}
+}
+.test-form-block .icon-mail {
+    margin: 0 auto;
+    padding-bottom: 85px;
+    color: #ffffff;
+}
+.test-form-block .form-wrapper form {
+    width: 100%;
+}
+
+/* form responses */
+.form-response-block {
+    margin: 0 auto;
+    max-width: 3350px;
+    background: #f6f6f7;
+}
+.response-wrapper {
+    padding: 50px 130px 40px 130px;
+    /*padding: 290px 20px 280px 20px;*/
+}
+@media screen and (min-width: 1980px) {
+    .response-wrapper {
+		padding-left: 530px;
+		padding-right: 530px;
+	}
+}
+.response-wrapper .header-block {
+    margin-bottom: 30px;
+}
+.response-wrapper .header-block h2 {
+    margin: 0;
+    font-size: 24px; /*roboto medium*/
+    font-weight: 400;
+    text-align: center;
+}
+@media screen and (min-width: 1390px) {
+    .response-wrapper .header-block h2 {
+		font-size: 86px;
+	}
+}
+.response-wrapper .body-block {
+    margin: 0;
+}
+
+/*footer*/
+.footer-container {
+    margin: 0 auto;
+    max-width: 3350px;
+    background: #2d3136;
+    color: #ffffff;
+}
+.footer-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-info {
+    padding: 75px 100px 115px 100px;
+}
+@media screen and (min-width: 1980px) {
+    .footer-info {
+		padding-left: 490px;
+		padding-right: 490px;
+	}
+}

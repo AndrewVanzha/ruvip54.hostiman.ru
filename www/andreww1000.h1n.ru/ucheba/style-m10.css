@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.header-block {
+  margin: 0 auto;
+  padding: 17px 23px;
+  background-color: aquamarine;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+.main-block {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: azure;
+}
+
+
+.main-block p {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  text-indent: 30px;
+  color: black;
+}
+
+h2 {
+  margin: 8px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.main-block .p1 {
+  font-style: italic;
+}
+
+.main-block .p2 {
+  font-weight: 700;
+}
+
+.main-block .p3 {
+  font-size: 14px;
+}
+
+.button-block {
+  margin: 0;
+  margin-top: 17px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 750px;
+  background-color: darkgrey;
+  float: left;
+}
+
+.button-block button {
+  display: block;
+  margin: 0;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: center;
+  color: crimson;
+  font-weight: 800;
+}
+
+.edit-button {
+  background-color: yellowgreen;
+}
+
+.save-button {
+  background-color: gold;
+}
+
+.refuse-button {
+  background-color: lightsalmon;
+}
+
+.tech-block {
+  float: right;
+  margin-top: 6px;
+  padding: 15px;
+  background-color: dimgray;
+}
+
+.tech-block button {
+  display: block;
+  padding: 3px 4px;
+  border: 2px solid darkmagenta;
+  border-radius: 10px;
+}
+
+.initial-button {
+  background-color: darkolivegreen;
+}
+
+.clear-button {
+  margin-top: 8px;
+  background-color: darkslategrey;
+}

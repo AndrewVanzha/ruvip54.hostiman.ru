@@ -1,0 +1,106 @@
+/* main */
+.container .include-page {
+    color: #0b2e13;
+    font-size: 22px;
+    font-weight: bold;
+}
+.container .include-section {
+    color: #8A6D3B;
+    font-size: 22px;
+    font-weight: bold;
+}
+.container .include-file {
+    color: #0ae4ff;
+    font-size: 22px;
+}
+
+.nav.nav-tabs .active {
+    background-color: #ffffff;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.nav.nav-tabs .active:focus {
+    background-color: #ffffff;
+}
+
+
+.header-info {
+    display: flex;
+    justify-content: flex-start;
+}
+.header-info>div:not(:last-of-type) {
+    /*margin-right: 350px;*/
+    outline: 1px solid blueviolet;
+}
+.header-info-box h3 {
+    line-height: 1;
+}
+.header-info-box div {
+    display: inline-block;
+}
+.header-info-box a {
+    font-size: 22px;
+    font-weight: bold;
+}
+.header-info-box p {
+    font-size: 18px;
+    text-align: center;
+}
+.flex_box {
+    flex: 1 1 33.33%;
+    margin-right: 50px;
+}
+.flex_box:last-child {
+    margin-right: 0;
+}
+.inter-box {
+    position: relative;
+}
+.inter-box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #bbbbbb;
+}
+.inter-box>* {
+    position: relative;
+}
+.inter-box p {
+    transform: translateX(-12px) translateY(-10px);
+}
+.system_auth_form {
+    /*margin: 10px 20px 10px auto;*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    /*min-width: fit-content;*/
+    outline: 1px solid #f57f17;
+    background-color: wheat;
+}
+.system_auth_form h2 {
+    text-align: center;
+}
+.system_auth_confirmation {
+    padding: 12px;
+    outline: 1px solid #0f6674;
+    background-color: seashell;
+}
+.bx-auth-reg_notice {
+    width: fit-content;
+    padding: 10px;
+    background-color: #fff176;
+}
+.system_registration {
+    outline: 3px solid #8A6D3B;
+    background-color: bisque;
+    width: fit-content;
+}
+.system_forgot_passwrd {
+    outline: 3px solid #8A6D3B;
+    background-color: aliceblue;
+}

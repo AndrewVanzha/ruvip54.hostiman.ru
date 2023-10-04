@@ -1,0 +1,6 @@
+.news-detail {
+	word-wrap: break-word;
+}
+.news-detail .detail_picture {
+	border: 0;
+}

@@ -1,0 +1,233 @@
+.test-form-block {
+	font-family: "Roboto Medium", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+@media screen and (min-width: 1390px) {
+	.test-form-block {
+		font-size: 70px;
+	}
+}
+.test-form-block .form-inner {
+	display: grid;
+	width: 100%;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"a"
+	"c"
+	"b";
+	margin-bottom: 20px;
+}
+@media screen and (min-width: 991px) {
+	.test-form-block .form-inner {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"a b"
+		"c b";
+	}
+}
+@media screen and (min-width: 2290px) {
+	.test-form-block .form-inner {
+		grid-column-gap: 300px;
+	}
+}
+.test-form-block .form-inner4 {
+	display: grid;
+	width: 100%;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"a"
+	"c"
+	"d"
+	"b";
+	margin-bottom: 20px;
+}
+@media screen and (min-width: 991px) {
+	.test-form-block .form-inner4 {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"a d"
+		"c b";
+	}
+}
+@media screen and (min-width: 2290px) {
+	.test-form-block .form-inner4 {
+		grid-column-gap: 300px;
+	}
+}
+.test-form-block .form-box {
+	background-color: lightcyan;
+}
+.test-form-block .form-box.text {
+	grid-area: a;
+}
+.test-form-block .form-box.textarea {
+	grid-area: b;
+}
+.test-form-block .form-box.email {
+	grid-area: c;
+}
+.test-form-block .form-box.tel {
+	grid-area: d;
+}
+.test-form-block .form-label {
+	width: 100%;
+	margin: 0 0 60px 0;
+	padding: 0;
+}
+.test-form-block .inputtext,
+.test-form-block .inputtextarea {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: 400;
+	/*background: #2f3338;*/
+	color: #d7d7d7;
+	color: #000;
+}
+@media screen and (min-width: 1390px) {
+	.test-form-block .inputtext,
+	.test-form-block .inputtextarea {
+		font-size: 70px;
+	}
+}
+.test-form-block input {
+	height: 125px;
+	padding: 0 60px;
+}
+.test-form-block textarea {
+	/*height: 100%;*/
+	resize: none;
+	padding: 0 60px;
+}
+.test-form-block .submit-button {
+	display: block;
+    margin: 0 0 20px auto;
+	padding: 20px 75px;
+	height: auto;
+	background: #be393b;
+	font-size: 20px;
+	font-weight: 500;
+	color: #ffffff;
+}
+@media screen and (min-width: 1390px) {
+	.test-form-block .submit-button {
+		font-size: 70px;
+	}
+}
+
+.message__boxes {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.bg-blue {
+	background-color: #4b596c;
+}
+.bg-green {
+	background-color: #58ad52;
+}
+.color-e1 .txttohtmllink {
+	color: #6d737b;
+}
+.color-e2 .txttohtmllink {
+	color: #58ad52;
+}
+.color-c1 {
+	color: #767582;
+}
+.color-c2 {
+	color: #768275;
+}
+.message__boxes .message__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-right: 0px;
+	margin-bottom: 35px;
+	/*max-height: 925px;*/
+}
+@media screen and (min-width: 2180px) {
+	.message__boxes .message__box {
+		margin-right: 135px;
+	}
+}
+.message__boxes .message__box:nth-child(3n) {
+	margin-right: 0;
+}
+.message__boxes .message__box:last-child {
+	margin-right: 0;
+}
+.message__boxes .message__box_header {
+	order: 1;
+	padding: 25px 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+    font-size: 18px; /*roboto medium*/
+	font-weight: 500;
+	color: #ffffff;
+	word-break: break-all;
+}
+@media screen and (min-width: 1390px) {
+	.message__boxes .message__box_header {
+		font-size: 34px;
+	}
+}
+.message__boxes .message__box_email {
+	order: 3;
+	padding: 18px 0 0px 0;
+	margin: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #e9eef3;
+	text-align: center;
+    font-size: 18px; /*roboto bold*/
+	font-weight: 700;
+	word-break: break-all;
+}
+@media screen and (min-width: 1390px) {
+	.message__boxes .message__box_email {
+		font-size: 30px;
+	}
+}
+.message__boxes .message__box_comment {
+	order: 4;
+	/*padding: 0 0 245px 0;*/
+	margin: 0;
+	width: 100%;
+	height: 175px;
+	background-color: #e9eef3;
+	text-align: center;
+    font-size: 16px; /*roboto medium*/
+	font-weight: 500;
+	word-break: break-all;
+}
+@media screen and (min-width: 1390px) {
+	.message__boxes .message__box_comment {
+		font-size: 30px;
+	}
+}
+.message__boxes .message__box_tel {
+	order: 2;
+	padding: 18px 0 0px 0;
+	margin: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #e9eef3;
+	text-align: center;
+    font-size: 18px; /*roboto bold*/
+	font-weight: 700;
+	word-break: break-all;
+}
+@media screen and (min-width: 1390px) {
+	.message__boxes .message__box_tel {
+		font-size: 30px;
+	}
+}
+

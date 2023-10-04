@@ -1,0 +1,92 @@
+.test-form-block {
+	font-family: "Roboto Medium", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+@media screen and (min-width: 1390px) {
+	.test-form-block {
+		font-size: 70px;
+	}
+}
+.test-form-block .form-inner {
+	display: grid;
+	width: 100%;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"a"
+	"c"
+	"b";
+	margin-bottom: 20px;
+}
+@media screen and (min-width: 991px) {
+	.test-form-block .form-inner {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"a b"
+		"c b";
+	}
+}
+@media screen and (min-width: 2290px) {
+	.test-form-block .form-inner {
+		grid-column-gap: 300px;
+	}
+}
+.test-form-block .form-box {
+	background-color: lightcyan;
+}
+.test-form-block .form-box.text {
+	grid-area: a;
+}
+.test-form-block .form-box.textarea {
+	grid-area: b;
+}
+.test-form-block .form-box.email {
+	grid-area: c;
+}
+.test-form-block .form-label {
+	width: 100%;
+	margin: 0 0 60px 0;
+	padding: 0;
+}
+.test-form-block .inputtext,
+.test-form-block .inputtextarea {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: 400;
+	/*background: #2f3338;*/
+	color: #d7d7d7;
+	color: #000;
+}
+@media screen and (min-width: 1390px) {
+	.test-form-block .inputtext,
+	.test-form-block .inputtextarea {
+		font-size: 70px;
+	}
+}
+.test-form-block input {
+	height: 125px;
+	padding: 0 60px;
+}
+.test-form-block textarea {
+	/*height: 100%;*/
+	resize: none;
+	padding: 0 60px;
+}
+.test-form-block .submit-button {
+	display: block;
+    margin: 0 0 20px auto;
+	padding: 20px 75px;
+	height: auto;
+	background: #be393b;
+	font-size: 20px;
+	font-weight: 500;
+	color: #ffffff;
+}
+@media screen and (min-width: 1390px) {
+	.test-form-block .submit-button {
+		font-size: 70px;
+	}
+}

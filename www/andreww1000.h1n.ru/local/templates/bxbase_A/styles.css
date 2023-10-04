@@ -1,0 +1,198 @@
+.header-container {
+    display: block;
+    padding: 10px 0;
+    background-color: #F1F1F1;
+}
+.main-container {
+    display: block;
+    padding: 10px 0;
+    background-color: #F7F7F7;
+}
+.footer-container {
+    display: block;
+    padding: 10px 0;
+    background-color: #F1F1F1;
+}
+.container {
+    /*width: 100%;*/
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.bx-top-nav {
+    background-color: #00a2df;
+}
+
+.search-box input {
+    width: 320px;
+}
+.search-btn {
+    position: relative;
+    right: -5px;
+    top: -9px;
+}
+
+.v21-citySelector {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.callback-header,
+.askquestion-header {
+    color: #8A6D3B;
+    text-align: center;
+}
+.askquestion-header .callback-box,
+.askquestion-header .close-box {
+    cursor: pointer;
+}
+.askquestion-header .callback-box:hover  {
+    fill: orangered;
+}
+.askquestion-header .close-box {
+    stroke: #000;
+}
+.askquestion-header .close-box:hover {
+    stroke: orangered;
+}
+.form-block,
+.callform-block {
+    width: 75%;
+    margin: 0 auto;
+}
+.form-block-show {
+     display: none;
+}
+
+.count-block {
+    margin: 10px 0 10px 0;
+}
+div.statistic-table {
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.do_check-block {
+    margin: 10px 0;
+}
+.do_check-block label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+}
+#do_check {
+    display: none;
+}
+#do_check + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ff22ff;
+    border-radius: 3px;
+}
+#do_check + span::before {
+    content: "\2713";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*font-size: 20px;*/
+    text-align: center;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+}
+#do_check:checked + span::before {
+    opacity: 1;
+}
+
+
+/*----------------------------------------------------- */
+/* CAPTCHA */
+/*----------------------------------------------------- */
+.captcha_image { border: 1px solid #e0e0e0; float: left; height: 43px; margin-right: 10px; width: 156px; }
+@media screen and (max-width: 630px) { .captcha_image { /* width: 123px; */ margin-bottom: 10px; } }
+.captcha_image img { height: 100%; width: 100%; display: block !important; }
+
+.captcha_input { overflow: hidden; }
+@media screen and (max-width: 630px) { .captcha_input { clear: both; } }
+.captcha_input .input-field { width: 100%; }
+
+#reloadCaptcha,
+#reloadCaptchaCallback,
+#reloadCaptchaSalary,
+#reloadCaptchaFooter {
+    float: left;
+    margin-right: 12px;
+    width: 43px;
+    height: 43px;
+    background: #fff url('/local/templates/bxbase_A/img/reload.png') no-repeat center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------- */
+/* BUTTON */
+/*----------------------------------------------------- */
+.button { background: #d7952a; border: 2px solid white; border-radius: 38px; box-sizing: border-box; color: white; display: block; font-size: 15px; font-weight: normal; height: 38px; letter-spacing: 0.04em; line-height: 35px; padding: 0 15px; text-align: center; text-decoration: none; text-transform: uppercase; transition: background 0.18s; }
+.button:hover { background: #cd8e27; }
+
+/*----------------------------------------------------- */
+/* INPUT FIELD */
+/*----------------------------------------------------- */
+.input-field { background: white; border: 1px solid #e0e0e0; padding: 10px 15px; }
+
+input.input-field { height: 45px; }
+
+
+/* kompleks */
+.kompleks-currency {
+    margin: 20px auto 20px auto;
+}
+.kompleks-currency__subtitle {
+    margin: 20px auto 15px auto;
+}
+
+
+/* currency */
+svg:not(:root) {
+    overflow: hidden;
+}
+.v21 {
+    letter-spacing: 0.01em;
+}
+.v21 svg {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+.v21 .v21-header__link {
+    align-items: center;
+    color: #546770;
+    display: flex;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 40px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.v21 .v21-header__link-icon {
+    flex-shrink: 0;
+}
+.v21 .v21-header__link-icon:first-child {
+    color: #a58a57;
+    margin-right: 10px;
+}
+.v21 .v21-link__text--inv {
+    border-bottom: transparent solid 1px;
+}
+.v21 .v21-link__text {
+    border-bottom: currentColor solid 1px;
+    transition: border-bottom-color 0.3s;
+}
+
+/* footer popup */
+.popup-form { display: none; margin: 25px 0; padding: 0; }

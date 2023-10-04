@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Персонал";
+$arDirProperties = Array(
+
+);
+?>

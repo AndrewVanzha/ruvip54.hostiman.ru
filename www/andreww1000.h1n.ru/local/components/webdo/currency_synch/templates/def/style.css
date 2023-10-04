@@ -1,0 +1,318 @@
+.currency-section {
+    box-sizing: border-box;
+}
+.currency-container {
+    /*box-sizing: content-box;*/
+    margin: 0 auto;
+    max-width: 1410px;
+    padding: 0 30px;
+}
+.currency-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /*margin: -30px 0 0 -30px;*/
+}
+.currency-grid__item {
+    padding: 30px 0 0 0px;
+    width: 50%;
+}
+/*.currency-grid__item--1x2@lg {}*/
+.currency-exchange-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.currency-h2 {
+    color: #00345e;
+    margin: 0 0 40px;
+    font-size: 38px;
+}
+.currency-exchange-info__date {
+    align-items: center;
+    color: #a58a57;
+    font-weight: normal;
+    display: flex;
+    margin: -20px 0 40px;
+}
+.currency-exchange-info__date-icon {
+    color: #a58a57;
+    margin: 2px 7px 0 0;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+.currency-exchange-info__note {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+.currency-link__text {
+    border-bottom: currentColor solid 1px;
+    transition: border-bottom-color 0.3s;
+}
+.currency-exchange-info__brief {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 50px;
+}
+.currency-exchange-info__renew {
+    margin: 60px auto 0 auto;
+}
+.currency-exchange-info__renew button {
+    padding: 25px 70px;
+    background-color: #4ebe94;
+    cursor: pointer;
+}
+.currency-exchange-info__set {
+    margin: 30px auto 0 auto;
+}
+.currency-exchange-info__set button {
+    padding: 25px 70px;
+    background-color: #c5a48f;
+    cursor: pointer;
+}
+.currency-exchange-info__button {}
+.currency-button {}
+.currency-button--border {}
+.currency-exchange-table {
+    border-collapse: collapse;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+/* table */
+
+.v21 .v21-exchange-grid-table {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content max-content;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    max-width: 100%;
+}
+.v21 .v21-exchange-table--header {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    border-top: 1px solid rgba(32, 32, 32, .1);
+    border-bottom: 1px solid rgba(32, 32, 32, .1);
+    color: #546770;
+    font-size: 14px;
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 47% 33% 20%;
+    grid-column-gap: 0;
+    width: 100%;
+    grid-template-areas:
+            "a a b";
+    -ms-grid-rows: auto 0 auto 0 auto;
+}
+@media screen and (min-width: 1100px) {
+    .v21 .v21-exchange-table--header {
+        grid-template-columns: 48% 13% 13% 13% 13%;
+        grid-template-areas:
+            "a b c d e";
+    }
+}
+.v21 .v21-exchange-table--header_currency {
+    width: 100%;
+    grid-area: a;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    padding-left: 14px;
+}
+.v21 .v21-exchange-table--header_code {
+    width: 100%;
+    grid-area: b;
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+    padding-left: 10px;
+}
+.v21 .v21-exchange-table--header_purchase {
+    width: 100%;
+    grid-area: c;
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+    padding-left: 10px;
+}
+.v21 .v21-exchange-table--header_sale {
+    width: 100%;
+    grid-area: d;
+    -ms-grid-column: 7;
+    -ms-grid-row: 1;
+    padding-left: 10px;
+}
+.v21 .v21-exchange-table--header_cbrf {
+    width: 100%;
+    grid-area: e;
+    -ms-grid-column: 9;
+    -ms-grid-row: 1;
+    padding-left: 10px;
+}
+@media screen and (max-width: 1100px) {
+    .v21 .v21-exchange-table--header_purchase,
+    .v21 .v21-exchange-table--header_sale,
+    .v21 .v21-exchange-table--header_cbrf {
+        display: none;
+    }
+}
+.v21 .v21-grid-table {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 47% 33% 20%;
+    grid-column-gap: 0;
+    grid-row-gap: 10px;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.v21 .v21-grid-row {
+    grid-template-areas:
+            "a a b"
+            "c d e"
+            "c d e";
+    -ms-grid-rows: auto 0 auto 0 auto;
+}
+.v21 .v21-grid-row:nth-child(odd) {
+    background: rgba(233, 236, 238, 0.7);
+    border-radius: 4px;
+}
+@media screen and (min-width: 1100px) {
+    .v21 .v21-grid-table {
+        grid-template-columns: 48% 13% 13% 13% 13%;
+    }
+    .v21 .v21-grid-row {
+        grid-template-areas:
+            "a b c d e";
+        -ms-grid-rows: auto;
+    }
+}
+.v21 .v21-grid-cell {
+    width: 100%;
+    position: relative;
+    color: #546770;
+}
+.v21 .v21-grid-cell--currency {
+    grid-area: a;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    padding-left: 14px;
+}
+.v21 .v21-grid-cell--code {
+    grid-area: b;
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+    padding-left: 10px;
+}
+.v21 .v21-grid-cell--code_text-subline {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+}
+.v21 .v21-grid-cell--code_text-subline--close {}
+.v21 .v21-grid-cell--buy {
+    grid-area: c;
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    padding-left: 14px;
+}
+.v21 .v21-grid-cell--sell {
+    grid-area: d;
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    padding-left: 10px;
+}
+.v21 .v21-grid-cell--cbrf {
+    grid-area: e;
+    -ms-grid-column: 5;
+    -ms-grid-row: 3;
+    padding-left: 10px;
+}
+.v21 .v21-grid-cell--buy_value,
+.v21 .v21-grid-cell--sell_value,
+.v21 .v21-grid-cell--cbrf_value {
+    display: flex;
+}
+.v21 .v21-grid-cell--cbrf_value {
+    color: #202020;
+}
+.v21 .v21-grid-cell--buy_name,
+.v21 .v21-grid-cell--sell_name,
+.v21 .v21-grid-cell--cbrf_name {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+@media screen and (min-width: 1100px) {
+    .v21 .v21-grid-cell--buy_name,
+    .v21 .v21-grid-cell--sell_name,
+    .v21 .v21-grid-cell--cbrf_name {
+        display: none;
+    }
+}
+.v21 .v21-exchange-table__icon {
+    position: relative;
+    top: 7px;
+}
+.v21 .v21-equal-sign {
+    top: 0;
+}
+
+
+
+.currency-exchange-table th {
+    background: #F9FBFB;
+    border-bottom: 1px solid rgba(32, 32, 32, 0.2);
+    border-top: 1px solid rgba(32, 32, 32, 0.2);
+    color: #546770;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0;
+    text-align: center;
+}
+.currency-exchange-table td {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 7px 0;
+    text-align: center;
+    width: 27%;
+}
+.body-table {
+    box-sizing: border-box;
+}
+.currency-exchange-table__value {
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 4.1em;
+}
+.currency-exchange-table__value--buy {
+    color: green;
+}
+.currency-exchange-table__value--sell {
+    color: red;
+}
+.currency-exchange-table__icon {
+    margin-left: 10px;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+.currency-exchange-table__type {
+    color: #546770;
+    display: inline-block;
+    width: 2.5em;
+}
+.currency-exchange-note {
+    color: #546770;
+    font-size: 12px;
+    font-weight: normal;
+    margin: auto 0 0;
+}
+.currency-exchange-note__item {
+    margin: 7px 0 0;
+}

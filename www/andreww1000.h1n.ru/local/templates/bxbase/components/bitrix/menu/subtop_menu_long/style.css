@@ -1,0 +1,76 @@
+/* Left menu*/
+:root {
+	--mr-menu: 170px;
+}
+@media screen and (max-width: 1270px) {
+	:root {
+		--mr-menu: 90px;
+	}
+}
+@media screen and (max-width: 1090px) {
+	:root {
+		--mr-menu: 20px;
+	}
+}
+
+ul.sub-menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+	display: flex;
+	/*justify-content: space-between;*/
+	/*flex: 1 1 calc(100% / 5 - var(--mr-menu));*/
+	width: fit-content;
+}
+
+ul.sub-menu li {
+	display: block;
+	padding: 10px 12px;
+	background-color: #95e3fa;
+	/*background:#F5F5F5 url(images/left_menu_bg.gif) top repeat-x;*/
+	position: relative;
+	width: min-content;
+	flex: 1 0 calc(100% / 7 - var(--mr-menu) * 6);
+}
+ul.sub-menu li:not(:last-child) {
+	/*margin-right: var(--mr-menu);*/
+	margin-right: 24px;
+}
+ul.sub-menu li a {
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.sub-menu li a:visited {
+	color:#BC262C;
+}
+
+ul.sub-menu li a:hover {
+	color:#BC262C;
+}
+
+
+ul.sub-menu li a.selected:link,
+ul.sub-menu li a.selected:visited,
+ul.sub-menu li a.selected:active,
+ul.sub-menu li a.selected:hover {
+	color:#FC8D3D;
+}
+
+.internal-menu {
+	position: absolute;
+	top: 45px;
+	left: -37px;
+	width: max-content;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.internal-menu li {
+	margin-bottom: 5px;
+	outline: 1px solid blue;
+}

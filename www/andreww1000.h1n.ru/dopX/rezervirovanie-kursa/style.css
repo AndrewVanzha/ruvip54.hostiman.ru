@@ -1,0 +1,131 @@
+.breadcrumbs {margin-bottom:44px}
+h1.page-title {display:none}
+.popup-form_content .button {outline:none}
+.fancybox-close-small {height:57px}
+
+/* reservation-rate */
+.reservation-rate {
+    margin: 86px 0;
+}
+
+.reservation-rate__title.page-title {
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 67px;
+    text-align: center;
+}
+
+.reservation-rate__banner {
+    margin: 86px 0;
+    align-items: center;
+}
+
+.reservation-rate__image img {
+    float: right;
+}
+
+.rr-advantages__item {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 60px 1fr;
+    margin: 36px 0;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.reservation-rate__help {
+    position: relative;
+    display: inline-block;
+    line-height: 18px;
+}
+
+.reservation-rate__help:hover .reservation-rate__tooltip {
+    max-height: 300px;
+}
+
+.reservation-rate__help:hover:after {
+    border-bottom-color: #62757E;
+    transition: .1s;
+}
+
+.reservation-rate__help img {
+    cursor: pointer;
+}
+
+.reservation-rate__help:after {
+    position: absolute;
+    transition: .1s ease-out .45s;
+    top: 12px;
+    right: 4px;
+    content: '';
+    border: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.reservation-rate__tooltip {
+    position: absolute;
+    transition: .5s;
+    max-height: 0;
+    overflow-y: hidden;
+    z-index: 999;
+    top: 22px;
+    right: 0;
+    min-width: 270px;
+    box-shadow: 6px 6px 15px rgba(98, 117, 126, 0.6);
+}
+
+.reservation-rate__tooltip_wrapper {
+    padding: 12px;
+    margin: 0;
+    background: #62757E;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.reservation-rate__city {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.reservation-rate__button {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.reservation-rate__button a {
+    display: inline-block;
+    line-height: 48px;
+    border: none;
+    padding: 0 36px;
+    font-size: 17px;
+    background-color: #a08a57;
+    color: white;
+    outline: none;
+}
+
+@media all and (max-width: 929px) {
+    .reservation-rate__title.page-title, .rr-faq__title.page-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .reservation-rate__image img {
+        max-width: 100%;
+    }
+
+    .reservation-rate__banner {
+        margin-bottom: 24px;
+    }
+
+    .reservation-rate {
+        margin: 48px 0;
+    }
+}
+
+@media all and (max-width: 629px) {
+    .rr-advantages__item {
+        font-size: 17px;
+        line-height: 24px;
+    }
+}

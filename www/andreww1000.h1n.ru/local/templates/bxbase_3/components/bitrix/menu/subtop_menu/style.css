@@ -1,0 +1,60 @@
+/* Left menu*/
+ul.sub-menu
+{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+	display: flex;
+	justify-content: space-between;
+}
+
+ul.sub-menu li
+{
+	width: min-content;
+	display: block;
+	padding: 10px 16px;
+	background-color: #95e3fa;
+	/*background:#F5F5F5 url(images/left_menu_bg.gif) top repeat-x;*/
+	position: relative;
+}
+
+ul.sub-menu li a
+{
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.sub-menu li a:visited
+{
+	color:#BC262C;
+}
+
+ul.sub-menu li a:hover
+{
+	color:#BC262C;
+}
+
+
+ul.sub-menu li a.selected:link,
+ul.sub-menu li a.selected:visited,
+ul.sub-menu li a.selected:active,
+ul.sub-menu li a.selected:hover
+{
+	color:#FC8D3D;
+}
+
+.internal-menu {
+	position: absolute;
+	top: 45px;
+	left: -62px;
+	width: max-content;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.internal-menu li {
+	margin-bottom: 5px;
+}

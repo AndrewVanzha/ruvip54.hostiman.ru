@@ -1,0 +1,118 @@
+.container .include-page {
+    color: #bc262c;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+.container .include-section {
+    color: #0d47a1;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+.container .include-file {
+    color: #0f6674;
+    font-size: 24px;
+}
+
+
+.dcontainer {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+  
+.main-block {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: azure;
+}
+.button-block {
+    margin: 0;
+    margin-top: 17px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgrey;
+}
+.button_class {
+    display: block;
+    margin: 0;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: center;
+    color: crimson;
+    font-weight: 800;
+    opacity: 1;
+    width: fit-content;
+}
+.edit-button {
+    background-color: yellowgreen;
+}
+.save-button {
+    background-color: gold;
+}
+.refuse-button {
+    background-color: lightsalmon;
+}
+.tech-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6px;
+    padding: 15px;
+    background-color: dimgray;
+}
+.initial-button {
+    outline: none;
+    background-color: lawngreen;
+}
+.clear-button {
+    margin-top: 8px;
+    background-color: darkslategrey;
+}
+.form-button {
+    outline: none;
+    background-color: lightpink;
+}
+.new-div {
+    margin: 20px auto 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    width: 650px;
+    background-color: darkgoldenrod;
+}
+.make_active {
+    background-color: red;
+}
+
+
+.tabs__block {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.tabs__block_item {
+    display: block;
+}
+.tabs__block_button {
+    padding: 5px 15px;
+    background-color: cyan;
+    outline: none;
+    border: none;
+    cursor: progress;
+}
+.tabs__block_button-active {
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.tab-content {
+    display: none;
+    padding: 7px 30px;
+}
+.tab-content-active {
+    display: block;
+}

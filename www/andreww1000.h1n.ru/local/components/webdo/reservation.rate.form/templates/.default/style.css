@@ -1,0 +1,358 @@
+input::-ms-clear {
+    display: none;
+}
+
+.rr-timer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rr-timer img {
+    display: block;
+}
+
+.rr-timer__info {
+    position: absolute;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.rr-timer__time {
+    font-size: 72px;
+    color: #62757E;
+    line-height: normal;
+}
+
+.rr-timer__description {
+    margin-top: -5px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #62757E;
+}
+
+.rr-timer__gradient {
+    position: absolute;
+    animation: rotate-timer 3s infinite ease-in-out;
+}
+
+@keyframes rotate-timer {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rr-options {
+    position: relative;
+    z-index: 1;
+    margin-right: -24px;
+    margin-left: 24px;
+}
+
+.rr-options__table {
+    margin-bottom: 24px;
+}
+
+.rr-options__tr {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    line-height: 48px;
+    text-align: right;
+}
+
+.rr-options__th {
+    color: #62757E;
+}
+
+.rr-options__td {
+    font-size: 34px;
+}
+
+.rr-options__currency {
+    color: #62757E;
+    text-align: left;
+}
+
+.rr-options__buy, .rr-options__sell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rr-options__buy {
+    color: #00345E;
+}
+
+.rr-options__sell {
+    color: #A58A57;
+}
+
+.rr-options__row {
+    position: relative;
+}
+
+.rr-options__checkbox {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 1px solid #D1D9E6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rr-options__checkbox_active {
+    background-color: #558983;
+    background-image: url(images/ok.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid #558983;
+    cursor: default;
+}
+
+.rr-options__amount-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 36px;
+}
+
+.rr-options__amount-input {
+    width: 100%;
+    line-height: 46px;
+    border: 1px solid #D1D9E6;
+    font-size: 21px;
+    padding: 0 12px;
+    outline: none;
+}
+
+.rr-options__amount-currency {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 21px;
+    line-height: 46px;
+}
+
+.rr-options .irs--flat .irs-line,
+.rr-options .irs--flat .irs-bar,
+.rr-options .irs--flat .irs-handle {
+    top: -5px;
+}
+
+.rr-options .irs--flat .irs-min,
+.rr-options .irs--flat .irs-max {
+    visibility: visible !important;
+    top: 0;
+    font-size: 17px;
+    line-height: 48px;
+    color: #62757E;
+    background-color: transparent;
+}
+
+.rr-options .irs--flat .irs-min::after,
+.rr-options .irs--flat .irs-max::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 30%;
+    background-color: #D1D9E6;
+}
+
+.rr-options .irs--flat .irs-min::after {
+    right: auto;
+    left: 0;
+}
+
+.rr-options .irs--flat .irs-line {
+    height: 5px;
+    background-color: #D1D9E6;
+    border-radius: 0;
+}
+
+.rr-options .irs--flat .irs-bar {
+    height: 5px;
+    background-color: #00345E;
+    border-radius: 0;
+}
+
+.rr-options .irs--flat .irs-handle {
+    top: -12px;
+    width: 19px;
+    height: 19px;
+    background-color: #FFFFFF;
+    border: 1px solid #00345E;
+    border-radius: 50%;
+    cursor: grab;
+}
+
+.rr-options .irs--flat .irs-handle:active {
+    cursor: grabbing;
+}
+
+.rr-options .irs--flat .irs-handle > i:first-child, .rr-options .irs--flat .irs-handle:hover > i:first-child {
+    background-color: #00345E;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 5px;
+    left: 6px;
+}
+
+.rr-options .irs-single {
+    display: none;
+}
+
+#rr-amount-range {
+    display: none;
+}
+
+.rr-summary {
+    padding-left: 72px;
+}
+
+.rr-summary__wrapper {
+    background: #F1F8FC;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.rr-summary__title {
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.rr-summary__tr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.rr-summary__td:last-child {
+    text-align: right;
+}
+
+.rr-summary__time {
+    color: #62757E;
+}
+
+.rr-message .alert {
+    margin: 24px 0 -48px;
+    text-align: center;
+}
+
+.rr-form__wrapper {
+    margin-top: 72px;
+    margin-bottom: 48px;
+}
+
+.rr-form__input label {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #62757E;
+    padding: 0 0 5px 12px;
+}
+
+.rr-form__input input {
+    width: 100%;
+    border: 1px solid #D1D9E6;
+    line-height: 48px;
+    font-size: 17px;
+    padding: 0 12px;
+    color: #202020;
+    outline: none;
+}
+
+.rr-form__accept {
+    text-align: center;
+}
+
+.rr-form__accept input {
+    display: inline-block;
+}
+
+.rr-form__address {
+    margin: 24px 0 48px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #62757E;
+}
+
+.rr-form__button {
+    display: block;
+    margin: 0 auto;
+    line-height: 48px;
+    border: none;
+    padding: 0 36px;
+    font-size: 17px;
+    background-color: #a08a57;
+    color: white;
+    outline: none;
+}
+
+.rr-form__button:disabled {
+    background-color: #C4C4C4;
+    cursor: default;
+}
+
+.rr-input__error {
+    border: 1px solid #dc3545 !important;
+}
+
+.rr-input__error:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+}
+
+@media all and (max-width: 1229px) {
+    .rr-options {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .rr-summary {
+        padding-left: 15px;
+        margin-top: 48px;
+    }
+}
+
+@media all and (max-width: 929px) {
+    .rr-timer {
+        margin-bottom: 24px;
+    }
+
+    .rr-form__wrapper {
+        margin: 48px 0 24px 0;
+    }
+
+    .rr-form__input {
+        margin-bottom: 24px;
+    }
+
+    .rr-form__input label {
+        padding-left: 0;
+    }
+}
+
+@media all and (max-width: 629px) {
+    .rr-options__td {
+        font-size: 24px;
+    }
+
+    .rr-summary__td .reservation-rate__tooltip {
+        right: auto;
+        left: -14px;
+    }
+}
