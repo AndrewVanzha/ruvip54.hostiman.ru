@@ -98,10 +98,10 @@ $arUrlRewrite=array (
   ),
   17 => 
   array (
-    'CONDITION' => '#^/infoblok/#',
+    'CONDITION' => '#^/dop1/infoblok/#',
     'RULE' => '',
     'ID' => 'bitrix:news',
-    'PATH' => '/infoblok/index.php',
+    'PATH' => '/dop1/infoblok/index.php',
     'SORT' => 100,
   ),
   1 => 
