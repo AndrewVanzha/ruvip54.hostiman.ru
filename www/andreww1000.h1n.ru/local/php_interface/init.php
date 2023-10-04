@@ -43,11 +43,16 @@ function loadKursBank(){
 }
 
 
-function debugg($data) {
-    global $USER;
-    //echo '<pre>' . print_r($data, 1) . '</pre>';
-    if ($USER->IsAdmin()) {
-        echo '<pre>' . print_r($data, 1) . '</pre>';
+if (!function_exists("debugg")) {
+    function debugg($data)
+    {
+        global $USER;
+        //echo '<pre>' . print_r($data, 1) . '</pre>';
+        if ($USER->IsAdmin()) {
+            echo '<pre>';
+            print_r($data, 1);
+            echo '</pre>';
+        }
     }
 }
 
