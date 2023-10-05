@@ -24,6 +24,7 @@ bitrixsetup.php
 
 # конфиги PHPStorm
 /.idea/
+/.vscode/
 
 # исключаем логи
 /local/php_interface/logs/
@@ -33,8 +34,10 @@ bitrixsetup.php
 /upload/
 
 # различные системные папки и файлы хостингов и операционных систем
-/cgi-bin/
-/awstats/
+/bin-tmp/
+/mod-tmp/
+/php-bin/
+/email/
 /webstat/
 .DS_Store
 .Spotlight-V100
@@ -51,6 +54,22 @@ ehthumbs.db
 *.min.css
 *.min.js
 
+*.png
+*.gif
+*.svg
+*.jpg
+*.jpeg
+*.webp
+
+*.csv
+*.json
+*.pdf
+*.ttf
+*.woff
+*.woff2
+*.otf
+*.eot
+
 # архивы, включая многотомные
 *.zip
 *.zip*  
@@ -66,10 +85,10 @@ ehthumbs.db
 *.rar
 .hg
 .ftpconfig
+
+*.rtf
 *.doc
 *.docx
-*.pdf
-*.rtf
 *.xls
 *.xlsx
 *.ppt
