@@ -1,9 +1,10 @@
 <?
+// https://www.youtube.com/watch?v=9xnJAoUvQx0
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 ?>
 <? debugg('Главная'); ?>
-
+QQ
 <div class="container">
 	<div class="frame-wrapper">
 		<div class="block-map">
