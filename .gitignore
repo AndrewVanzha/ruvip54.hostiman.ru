@@ -36,11 +36,11 @@
 /php-bin/
 /email/
 /webstat/
-/cagefs/
-/tmp/
+/.cagefs/
 /.cl.selector/
 /.filemgr-tmp/
 /.ssh/
+/tmp/
 
 .bash_history
 .fmsettings
