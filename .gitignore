@@ -36,8 +36,9 @@
 /php-bin/
 /email/
 /webstat/
-/cagets/
-/cl.selector/
+/cagefs/
+/tmp/
+/.cl.selector/
 /.filemgr-tmp/
 /.ssh/
 
