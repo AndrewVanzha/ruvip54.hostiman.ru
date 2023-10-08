@@ -11,9 +11,6 @@
 /www/b/up_blocks/
 /www/b/.DS_Store
 
-bitrixsetup.php
-
-
 /.Trash-1000/
 /currency/
 /temp/
@@ -39,6 +36,16 @@ bitrixsetup.php
 /php-bin/
 /email/
 /webstat/
+/cagets/
+/cl.selector/
+/.filemgr-tmp/
+/.ssh/
+
+.bash_history
+.fmsettings
+bitrixsetup.php
+mod_lsapi_reset_me
+
 .DS_Store
 .Spotlight-V100
 .Trashes
