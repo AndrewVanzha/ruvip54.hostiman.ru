@@ -4,7 +4,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
 ?>
 <? debugg('Главная'); ?>
-QQ
+QQ-test
 <div class="container">
 	<div class="frame-wrapper">
 		<div class="block-map">
